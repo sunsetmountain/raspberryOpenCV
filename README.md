@@ -17,6 +17,13 @@ Open your /etc/dphys-swapfile (sudo nano /etc/dphys-swapfile) and then edit the 
 CONF_SWAPSIZE=1024
 ```
 
+Force the swapfile change to take effect
+
+```
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+```
+
 Run the installation script
 
 ```
@@ -27,4 +34,11 @@ Open your  /etc/dphys-swapfile and then edit the put the CONF_SWAPSIZE variable 
 
 ```
 CONF_SWAPSIZE=100
+```
+
+Force the swapfile change to take effect
+
+```
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
 ```
