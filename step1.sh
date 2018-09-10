@@ -1,4 +1,5 @@
 # Install all of the core software needed to make use of OpenCV
+# Based off of https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
 
 # Start at the beginning by going home.
 cd ~
