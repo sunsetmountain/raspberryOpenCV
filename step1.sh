@@ -24,3 +24,26 @@ echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
 echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+
+# Refresh changes just made to the .profile
+source ~/.profile
+
+# Make a virtual environment
+mkvirtualenv cv -p python2
+
+# Enter virtual environment
+source ~/.profile
+workon cv
+
+# Install numpy
+pip install numpy
+
+# Compile and install OpenCV
+cd ~/opencv/
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D INSTALL_PYTHON_EXAMPLES=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+    -D BUILD_EXAMPLES=ON ..
