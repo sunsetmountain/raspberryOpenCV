@@ -21,20 +21,20 @@ git clone https://github.com/opencv/opencv
 git clone https://github.com/opencv/opencv_contrib
 
 # Add startup commands to the end of .profile
-#echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
-#echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
-#echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
-#echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
+echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
+echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2" >> ~/.profile
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 
 # Refresh changes just made to the .profile
-#source ~/.profile
+source ~/.profile
 
 # Make a virtual environment
-#mkvirtualenv cv -p python2
+mkvirtualenv cv -p python2
 
 # Enter virtual environment
-#source ~/.profile
-#workon cv
+source ~/.profile
+workon cv
 
 # Install numpy
 pip install numpy
