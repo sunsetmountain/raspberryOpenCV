@@ -19,10 +19,6 @@ sudo pip install virtualenv virtualenvwrapper
 git clone https://github.com/opencv/opencv
 git clone https://github.com/opencv/opencv_contrib
 
-# Create an OpenCV directory
-cd ~
-mkdir opencv
-
 # Add startup commands to the end of .profile
 echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
 echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
