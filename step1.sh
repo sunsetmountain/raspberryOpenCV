@@ -32,10 +32,6 @@ source ~/.profile
 # Make a virtual environment
 mkvirtualenv cv -p python2
 
-# Enter virtual environment
-source ~/.profile
-workon cv
-
 # Install numpy
 pip install numpy
 
