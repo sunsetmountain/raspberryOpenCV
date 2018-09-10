@@ -12,13 +12,16 @@ cd raspberryOpenCV
 
 chmod +x initialsoftware.sh
 
-Open your /etc/dphys-swapfile (sudo nano /etc/dphys-swapfile) and then edit the CONF_SWAPSIZE  variable:
+Open your /etc/dphys-swapfile (sudo nano /etc/dphys-swapfile) and then edit the CONF_SWAPSIZE variable:
 
-# set size to absolute value, leaving empty (default) then uses computed value
-#   you most likely don't want this, unless you have an special disk situation
-# CONF_SWAPSIZE=100
 CONF_SWAPSIZE=1024
 
 Run the installation script
 
 ./initialsoftware.sh
+
+
+
+Open your  /etc/dphys-swapfile and then edit the put the CONF_SWAPSIZE variable back to the original value:
+
+CONF_SWAPSIZE=100
