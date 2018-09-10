@@ -1,6 +1,6 @@
 # raspberryOpenCV
 
-With a fresh install of Noobs...
+With a fresh install of Noobs (after Wifi setup, updates, etc.), open up a terminal...
 
 ```
 cd ~
