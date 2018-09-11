@@ -30,7 +30,7 @@ Run the installation script
 ./initialsoftware.sh
 ```
 
-Open your  /etc/dphys-swapfile and then edit the put the CONF_SWAPSIZE variable back to the original value:
+Open your /etc/dphys-swapfile and then put the CONF_SWAPSIZE variable back to the original value:
 
 ```
 CONF_SWAPSIZE=100
