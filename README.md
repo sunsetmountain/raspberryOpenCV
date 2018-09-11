@@ -14,7 +14,7 @@ chmod +x initialsoftware.sh
 Open your /etc/dphys-swapfile (sudo nano /etc/dphys-swapfile) and then edit the CONF_SWAPSIZE variable:
 
 ```
-CONF_SWAPSIZE=1024
+CONF_SWAPSIZE=4096
 ```
 
 Force the swapfile change to take effect
